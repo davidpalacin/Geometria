@@ -16,7 +16,7 @@ namespace Geometria
 
         public override string ToString()
         {
-            return $"Soy un cuadrado con lados de: {lados}";
+            return $"Soy un cuadrado con lados de: {lados}. Con perímetro: {Perimetro()}. Area: {Area()}";
         }
     }
 }

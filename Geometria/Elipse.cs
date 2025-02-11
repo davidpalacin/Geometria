@@ -21,14 +21,14 @@ namespace Geometria
             RadioMenor = radioMenor;
         }
 
-        public virtual double CalcularArea()
+        public virtual double Area()
         {
             return Math.PI * RadioMayor * RadioMenor;
         }
 
         public override string ToString()
         {
-            return $"Soy un Elipse con radio mayor: {RadioMayor} y menor: {RadioMenor}. Mi área es: {CalcularArea()}";
+            return $"Soy un Elipse con radio mayor: {RadioMayor} y menor: {RadioMenor}. Mi área es: {Area()}";
         }
     }
 }

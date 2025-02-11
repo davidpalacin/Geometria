@@ -29,7 +29,7 @@ namespace Geometria
 
         public override string ToString()
         {
-            return $"Soy un rectángulo de base: {this.b} y altura: {this.a}";
+            return $"Soy un rectángulo de base: {this.b} y altura: {this.a}. Con perímetro: {Perimetro()}. Area: {Area()}";
         }
     }
 }

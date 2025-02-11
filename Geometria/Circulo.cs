@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace Geometria
 {
-    internal class Circulo
+    internal class Circulo : Elipse
     {
+        private double radio;
+
+        public double Radio {set; get;}
+
+        public Circulo(double radio) : base(radio, radio)
+        {
+            Radio = radio;
+        }
+
+        public override string ToString()
+        {
+            return $"Soy un círculo de radio: {Radio}. Mi área es: {Area()}";
+        }
     }
 }

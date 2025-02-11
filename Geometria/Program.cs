@@ -13,7 +13,7 @@ namespace Geometria
             Forma forma = new Forma();
             Console.WriteLine(forma.ToString());
 
-            Rectangulo rectangulo = new Rectangulo(10, 20);
+            Rectangulo rectangulo = new Rectangulo(15, 15);
             Console.WriteLine(rectangulo.ToString());
 
             Cuadrado cuadrado = new Cuadrado(15);
@@ -21,6 +21,9 @@ namespace Geometria
 
             Elipse elipse = new Elipse(10, 20);
             Console.WriteLine(elipse.ToString());
+
+            Circulo circulo = new Circulo(10);
+            Console.WriteLine(circulo.ToString());
         }
     }
 }

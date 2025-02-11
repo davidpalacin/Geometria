@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Geometria
 {
-    internal class Triangulo
+    internal class Triangulo : Poligono
     {
     }
 }

@@ -8,5 +8,6 @@ namespace Geometria
 {
     internal class Poligono : Forma
     {
+         
     }
 }
