@@ -19,9 +19,8 @@ namespace Geometria
             Cuadrado cuadrado = new Cuadrado(15);
             Console.WriteLine(cuadrado.ToString());
 
-
-
-
+            Elipse elipse = new Elipse(10, 20);
+            Console.WriteLine(elipse.ToString());
         }
     }
 }

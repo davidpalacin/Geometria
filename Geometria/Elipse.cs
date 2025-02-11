@@ -11,5 +11,24 @@ namespace Geometria
         private double radioMayor;
         private double radioMenor;
 
+        public double RadioMayor { get; set; }
+        public double RadioMenor { get; set; }
+
+
+        public Elipse (double radioMayor, double radioMenor)
+        {
+            RadioMayor = radioMayor;
+            RadioMenor = radioMenor;
+        }
+
+        public virtual double CalcularArea()
+        {
+            return Math.PI * RadioMayor * RadioMenor;
+        }
+
+        public override string ToString()
+        {
+            return $"Soy un Elipse con radio mayor: {RadioMayor} y menor: {RadioMenor}. Mi área es: {CalcularArea()}";
+        }
     }
 }
