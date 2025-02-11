@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Geometria
 {
-    internal class Cuadrado
+    internal class Cuadrado : Rectangulo
     {
+        private double lados;
+        public Cuadrado(double lados) : base(lados, lados)
+        {
+            this.lados = lados;
+        }
+
+        public override string ToString()
+        {
+            return $"Soy un cuadrado con lados de: {lados}";
+        }
     }
 }

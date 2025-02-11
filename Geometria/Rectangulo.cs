@@ -8,7 +8,6 @@ namespace Geometria
 {
     internal class Rectangulo : Forma
     {
-        // debe tener una base y una altura, además de un método para calcular el área y otro para calcular el perimetro
         private double b;
         private double a;
 
@@ -26,6 +25,11 @@ namespace Geometria
         public double Perimetro()
         {
             return 2 * (this.b + this.a);
+        }
+
+        public override string ToString()
+        {
+            return $"Soy un rectángulo de base: {this.b} y altura: {this.a}";
         }
     }
 }

@@ -10,6 +10,18 @@ namespace Geometria
     {
         static void Main(string[] args)
         {
+            Forma forma = new Forma();
+            Console.WriteLine(forma.ToString());
+
+            Rectangulo rectangulo = new Rectangulo(10, 20);
+            Console.WriteLine(rectangulo.ToString());
+
+            Cuadrado cuadrado = new Cuadrado(15);
+            Console.WriteLine(cuadrado.ToString());
+
+
+
+
         }
     }
 }

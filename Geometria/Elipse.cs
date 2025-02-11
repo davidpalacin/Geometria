@@ -8,5 +8,8 @@ namespace Geometria
 {
     internal class Elipse : Forma
     {
+        private double radioMayor;
+        private double radioMenor;
+
     }
 }
