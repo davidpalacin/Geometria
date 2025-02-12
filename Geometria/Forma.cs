@@ -7,22 +7,9 @@ using System.Threading.Tasks;
 
 namespace Geometria
 {
-    internal class Forma
+    abstract class Forma
     {
-        public override string ToString()
-        {
-            return "Soy una forma";
-        }
-
-        public virtual double Area()
-        {
-            return 0;
-        }
-
-        public virtual double Perimetro()
-        {
-            return 0;
-        }
-
+        public abstract double Perimetro();
+        public abstract double Area();
     }
 }

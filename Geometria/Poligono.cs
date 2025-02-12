@@ -17,12 +17,12 @@ namespace Geometria
             NumeroLados = numeroLados;
         }
 
-        public virtual double Area()
+        public override double Area()
         {
             return 0;
         }
 
-        public virtual double Perimetro()
+        public override double Perimetro()
         {
             return 0;
         }

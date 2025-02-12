@@ -21,12 +21,12 @@ namespace Geometria
             RadioMenor = radioMenor;
         }
 
-        public virtual double Area()
+        public override double Area()
         {
             return Math.PI * RadioMayor * RadioMenor;
         }
 
-        public virtual double Perimetro()
+        public override double Perimetro()
         {
             // Fórmula de Ramanujan
             return Math.PI * (3 * (RadioMayor + RadioMenor) - Math.Sqrt((3 * RadioMayor + RadioMenor) * (RadioMayor + 3 * RadioMenor)));

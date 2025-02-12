@@ -8,8 +8,6 @@ namespace Geometria
 {
     internal class Cuadrado : Rectangulo
     {
-        private double lados;
-
         public double Lados { get; set; }
 
         public Cuadrado(double lados) : base(lados, lados)
@@ -19,7 +17,7 @@ namespace Geometria
 
         public override string ToString()
         {
-            return $"Soy un cuadrado con lados de: {lados}. Con perímetro: {Perimetro()}. Area: {Area()}";
+            return $"Soy un cuadrado con lados de: {Lados}. Con perímetro: {Perimetro()}. Area: {Area()}";
         }
     }
 }

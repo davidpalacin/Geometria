@@ -10,8 +10,6 @@ namespace Geometria
     {
         static void Main(string[] args)
         {
-            Forma forma = new Forma();
-            Console.WriteLine(forma.ToString());
 
             Rectangulo rectangulo = new Rectangulo(15, 15);
             Console.WriteLine(rectangulo.ToString());
@@ -27,6 +25,12 @@ namespace Geometria
 
             Circulo circulo = new Circulo(10);
             Console.WriteLine(circulo.ToString());
+
+            List<Forma> formas = new List<Forma>{circulo, cuadrado};
+
+            Diagrama dia = new Diagrama(formas);
+
+            Console.WriteLine(dia.ToString());
         }
     }
 }

@@ -8,29 +8,37 @@ namespace Geometria
 {
     class Diagrama
     {
-        private List<Forma> formas;
-        public List<Forma> Formas { set; get; }
+        public List<Forma> Formas { get; set; }  // Lista de formas correctamente usada
 
-        // Calcular suma del perímetro de todas las formas de la lista
+        public Diagrama(List<Forma> formas)
+        {
+            // Asignamos la lista recibida a la propiedad Formas
+            Formas = formas ?? new List<Forma>();  // Evita un posible null
+        }
+
         public double Perimetro()
         {
             double sumaPerimetro = 0;
-            foreach(Forma figura in formas)
+            foreach (Forma figura in Formas)
             {
                 sumaPerimetro += figura.Perimetro();
             }
             return sumaPerimetro;
         }
 
-        // Calcular suma del área de todas las formas de la lista
         public double Area()
         {
             double sumaArea = 0;
-            foreach (Forma figura in formas)
+            foreach (Forma figura in Formas)
             {
                 sumaArea += figura.Area();
             }
             return sumaArea;
+        }
+
+        public override string ToString()
+        {
+            return $"De todas las formas que contengo, el área es: {Area()} y el perímetro es: {Perimetro()}";
         }
     }
 }
