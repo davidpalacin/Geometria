@@ -14,7 +14,7 @@ namespace Geometria
             Rectangulo rectangulo = new Rectangulo(15, 15);
             Console.WriteLine(rectangulo.ToString());
 
-            Triangulo tri = new Triangulo();
+            Triangulo tri = new Triangulo(10, 10, 10);
             Console.WriteLine(tri.ToString());
 
             Cuadrado cuadrado = new Cuadrado(15);
@@ -26,9 +26,8 @@ namespace Geometria
             Circulo circulo = new Circulo(10);
             Console.WriteLine(circulo.ToString());
 
-            List<Forma> formas = new List<Forma>{circulo, cuadrado};
-
-            Diagrama dia = new Diagrama(formas);
+            Diagrama dia = new Diagrama();
+            dia.AgregarFormas();
 
             Console.WriteLine(dia.ToString());
         }

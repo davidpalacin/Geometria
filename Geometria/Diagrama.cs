@@ -10,10 +10,9 @@ namespace Geometria
     {
         public List<Forma> Formas { get; set; }  // Lista de formas correctamente usada
 
-        public Diagrama(List<Forma> formas)
+        public Diagrama()
         {
-            // Asignamos la lista recibida a la propiedad Formas
-            Formas = formas ?? new List<Forma>();  // Evita un posible null
+            Formas = new List<Forma>();
         }
 
         public double Perimetro()
@@ -34,6 +33,17 @@ namespace Geometria
                 sumaArea += figura.Area();
             }
             return sumaArea;
+        }
+
+        public void AgregarFormas()
+        {
+            // Rellenar la lista con una forma de cada tipo con medidas random
+            Random random = new Random();
+            Formas.Add(new Cuadrado(random.Next(1, 10)));
+            Formas.Add(new Rectangulo(random.Next(1, 10), random.Next(1, 10)));
+            Formas.Add(new Triangulo(random.Next(1, 10), random.Next(1, 10), random.Next(1, 10)));
+            Formas.Add(new Circulo(random.Next(1, 10)));
+            Formas.Add(new Elipse(random.Next(1, 10), random.Next(1, 10)));
         }
 
         public override string ToString()

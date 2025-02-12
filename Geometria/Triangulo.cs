@@ -13,32 +13,20 @@ namespace Geometria
         public double LadoB { get; set; }
         public double LadoC { get; set; }
 
-        public double B { get; set; } // Base
-        public double A { get; set; } // Altura
-
-
-
-        public Triangulo(double ladoA, double ladoB, double ladoC, double b, double a) : base(3)
+        public Triangulo(double ladoA, double ladoB, double ladoC) : base(3)
         {
             LadoA = ladoA;
             LadoB = ladoB;
             LadoC = ladoC;
-            B = b;
-            A = a;
-        }
-
-        public Triangulo() : base(3) // Constructor por defecto
-        {
-            LadoA = 4;
-            LadoB = 4;
-            LadoC = 4;
-            B = 10;
-            A = 5;
         }
 
         public override double Area()
         {
-            return (B * A) / 2;
+            // Calcular el semiperímetro
+            double s = (LadoA + LadoB + LadoC) / 2;
+
+            // Calcular el área
+            return  Math.Sqrt(s * (s - LadoA) * (s - LadoB) * (s - LadoC));
         }
 
         public override double Perimetro()
