@@ -9,9 +9,12 @@ namespace Geometria
     internal class Cuadrado : Rectangulo
     {
         private double lados;
+
+        public double Lados { get; set; }
+
         public Cuadrado(double lados) : base(lados, lados)
         {
-            this.lados = lados;
+            Lados = lados;
         }
 
         public override string ToString()

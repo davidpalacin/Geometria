@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace Geometria
 {
-    internal class Rectangulo : Forma
+    internal class Rectangulo : Poligono
     {
         private double b;
         private double a;
 
-        public Rectangulo(double b, double a)
+        public Rectangulo(double b, double a) : base(4)
         {
             this.b = b;
             this.a = a;
         }
 
-        public double Area()
+        public override double Area()
         {
             return this.b * this.a;
         }
 
-        public double Perimetro()
+        public override double Perimetro()
         {
             return 2 * (this.b + this.a);
         }

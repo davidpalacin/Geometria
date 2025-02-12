@@ -22,6 +22,11 @@ namespace Geometria
             return 0;
         }
 
+        public virtual double Perimetro()
+        {
+            return 0;
+        }
+
         public override string ToString()
         {
             return $"Soy un polígono de {NumeroLados} lados";
