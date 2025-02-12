@@ -40,5 +40,15 @@ namespace Geometria
         {
             return (B * A) / 2;
         }
+
+        public override double Perimetro()
+        {
+            return LadoA + LadoB + LadoC;
+        }
+
+        public override string ToString()
+        {
+            return $"Soy un triángulo. Mis lados miden: {LadoA}, {LadoB} y {LadoC}. Mi área es: {Area()} y mi perímetro es {Perimetro()}";
+        }
     }
 }

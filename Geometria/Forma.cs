@@ -13,5 +13,16 @@ namespace Geometria
         {
             return "Soy una forma";
         }
+
+        public virtual double Area()
+        {
+            return 0;
+        }
+
+        public virtual double Perimetro()
+        {
+            return 0;
+        }
+
     }
 }

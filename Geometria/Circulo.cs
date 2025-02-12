@@ -17,6 +17,11 @@ namespace Geometria
             Radio = radio;
         }
 
+        public override double Perimetro()
+        {
+            return 2 * Math.PI * Radio;
+        }
+
         public override string ToString()
         {
             return $"Soy un círculo de radio: {Radio}. Mi área es: {Area()}";

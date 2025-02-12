@@ -26,9 +26,15 @@ namespace Geometria
             return Math.PI * RadioMayor * RadioMenor;
         }
 
+        public virtual double Perimetro()
+        {
+            // Fórmula de Ramanujan
+            return Math.PI * (3 * (RadioMayor + RadioMenor) - Math.Sqrt((3 * RadioMayor + RadioMenor) * (RadioMayor + 3 * RadioMenor)));
+        }
+
         public override string ToString()
         {
-            return $"Soy un Elipse con radio mayor: {RadioMayor} y menor: {RadioMenor}. Mi área es: {Area()}";
+            return $"Soy un Elipse con radio mayor: {RadioMayor} y menor: {RadioMenor}. Mi área es: {Area()}. Mi perímetro es: {Perimetro()}";
         }
     }
 }

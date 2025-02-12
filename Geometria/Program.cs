@@ -16,6 +16,9 @@ namespace Geometria
             Rectangulo rectangulo = new Rectangulo(15, 15);
             Console.WriteLine(rectangulo.ToString());
 
+            Triangulo tri = new Triangulo();
+            Console.WriteLine(tri.ToString());
+
             Cuadrado cuadrado = new Cuadrado(15);
             Console.WriteLine(cuadrado.ToString());
 
